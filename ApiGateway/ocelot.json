@@ -1,0 +1,261 @@
+{
+    "Routes": [
+        {
+            "UpstreamPathTemplate": "/customers/login",
+            "UpstreamHttpMethod": [
+                "POST"
+            ],
+            "DownstreamPathTemplate": "/api/customers/login",
+            "DownstreamScheme": "http",
+            "Priority": 1,
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "custtapi.runasp.net",
+                    "Port": 80
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/customers/register",
+            "UpstreamHttpMethod": [
+                "POST"
+            ],
+            "DownstreamPathTemplate": "/api/customers/register",
+            "DownstreamScheme": "http",
+            "Priority": 1,
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "custtapi.runasp.net",
+                    "Port": 80
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/customers",
+            "UpstreamHttpMethod": [
+                "GET",
+                "POST"
+            ],
+            "DownstreamPathTemplate": "/api/customers",
+            "DownstreamScheme": "http",
+            "SwaggerKey": "customers",
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "AllowedScopes": []
+            },
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "custtapi.runasp.net",
+                    "Port": 80
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/customers/{everything}",
+            "UpstreamHttpMethod": [
+                "GET",
+                "POST",
+                "PUT",
+                "DELETE"
+            ],
+            "DownstreamPathTemplate": "/api/customers/{everything}",
+            "DownstreamScheme": "http",
+            "SwaggerKey": "customers",
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "AllowedScopes": []
+            },
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "custtapi.runasp.net",
+                    "Port": 80
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/vehicles",
+            "UpstreamHttpMethod": [
+                "GET",
+                "POST"
+            ],
+            "DownstreamPathTemplate": "/api/vehicles",
+            "DownstreamScheme": "http",
+            "SwaggerKey": "vehicles",
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "AllowedScopes": []
+            },
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "vehicleapi.runasp.net",
+                    "Port": 80
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/vehicles/{everything}",
+            "UpstreamHttpMethod": [
+                "GET",
+                "POST",
+                "PUT",
+                "DELETE"
+            ],
+            "DownstreamPathTemplate": "/api/vehicles/{everything}",
+            "DownstreamScheme": "http",
+            "SwaggerKey": "vehicles",
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "AllowedScopes": []
+            },
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "vehicleapi.runasp.net",
+                    "Port": 80
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/bookings",
+            "UpstreamHttpMethod": [
+                "GET",
+                "POST"
+            ],
+            "DownstreamPathTemplate": "/api/bookings",
+            "DownstreamScheme": "http",
+            "SwaggerKey": "bookings",
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "AllowedScopes": []
+            },
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "bookingapi.runasp.net",
+                    "Port": 80
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/bookings/{everything}",
+            "UpstreamHttpMethod": [
+                "GET",
+                "POST",
+                "PUT",
+                "DELETE"
+            ],
+            "DownstreamPathTemplate": "/api/bookings/{everything}",
+            "DownstreamScheme": "http",
+            "SwaggerKey": "bookings",
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "AllowedScopes": []
+            },
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "bookingapi.runasp.net",
+                    "Port": 80
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/payments",
+            "UpstreamHttpMethod": [
+                "GET",
+                "POST"
+            ],
+            "DownstreamPathTemplate": "/api/payments",
+            "DownstreamScheme": "http",
+            "SwaggerKey": "payments",
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "AllowedScopes": []
+            },
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "paymentapi.runasp.net",
+                    "Port": 80
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/payments/{everything}",
+            "UpstreamHttpMethod": [
+                "GET",
+                "POST",
+                "PUT",
+                "DELETE"
+            ],
+            "DownstreamPathTemplate": "/api/payments/{everything}",
+            "DownstreamScheme": "http",
+            "SwaggerKey": "payments",
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "AllowedScopes": []
+            },
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "paymentapi.runasp.net",
+                    "Port": 80
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/uploads/{everything}",
+            "UpstreamHttpMethod": [
+                "GET"
+            ],
+            "DownstreamPathTemplate": "/uploads/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "custtapi.runasp.net",
+                    "Port": 80
+                }
+            ]
+        }
+    ],
+    "GlobalConfiguration": {
+        "BaseUrl": "http://apigateway.tryasp.net"
+    },
+    "SwaggerEndPoints": [
+        {
+            "Key": "customers",
+            "Config": [
+                {
+                    "Name": "Customer API",
+                    "Version": "v1",
+                    "Url": "http://custtapi.runasp.net/swagger/v1/swagger.json"
+                }
+            ]
+        },
+        {
+            "Key": "vehicles",
+            "Config": [
+                {
+                    "Name": "Vehicle API",
+                    "Version": "v1",
+                    "Url": "http://vehicleapi.runasp.net/swagger/v1/swagger.json"
+                }
+            ]
+        },
+        {
+            "Key": "bookings",
+            "Config": [
+                {
+                    "Name": "Booking API",
+                    "Version": "v1",
+                    "Url": "http://bookingapi.runasp.net/swagger/v1/swagger.json"
+                }
+            ]
+        },
+        {
+            "Key": "payments",
+            "Config": [
+                {
+                    "Name": "Payment API",
+                    "Version": "v1",
+                    "Url": "http://paymentapi.runasp.net/swagger/v1/swagger.json"
+                }
+            ]
+        }
+    ]
+}
