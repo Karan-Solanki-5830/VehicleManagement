@@ -1,6 +1,6 @@
 # VehicleManagement
 
-A microservices-based vehicle booking and management system built with .NET (C#) and Angular/TypeScript. Each service handles a specific domain and they communicate through an API Gateway using Ocelot.
+A microservices-based vehicle booking and management system built with .NET (C#) and React. Each service handles a specific domain and they communicate through an API Gateway using Ocelot.
 
 ## Services
 
@@ -14,7 +14,7 @@ A microservices-based vehicle booking and management system built with .NET (C#)
 ## Tech Stack
 
 - ASP.NET Core (.NET 8)
-- Angular + TypeScript
+- React
 - MS SQL Server (`mssql`)
 - Ocelot API Gateway
 - Visual Studio 2022
